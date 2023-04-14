@@ -31,3 +31,6 @@ Flags:
   -v, --vad                 Use voice activity detection (default true)
       --vad-mode int        The strength of the voice activity detection, from 0, most sensitive, to 3, least sensitive (default 1)
 ```
+
+## Server
+### In Progress
