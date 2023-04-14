@@ -1,0 +1,8 @@
+Required {
+    whisper.cpp
+    espeak
+}
+
+Optional {
+    glava
+}
