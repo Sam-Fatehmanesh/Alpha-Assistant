@@ -11,5 +11,5 @@ Alpha Assisant is a Large Language Model and Whisper.cpp powered personal assist
     make whisper
     cd ../../..
     bash ./models/download-ggml-model.sh tiny.en
-	CGO_CFLAGS=-I/path/to/whisper.cpp CGO_LDFLAGS=-L/path/to/whisper.cpp go build -o alpha
+    CGO_CFLAGS=-I/path/to/whisper.cpp CGO_LDFLAGS=-L/path/to/whisper.cpp go build -o alpha
 ```
