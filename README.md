@@ -1,6 +1,6 @@
-# Alpha Assisant
+# Alpha Assistant
 
-Alpha Assisant is a Large Language Model and Whisper.cpp powered personal assistant
+Alpha Assistant is a Large Language Model and Whisper.cpp powered personal assistant
 
 ## Setup
 ```bash
@@ -19,7 +19,7 @@ The alpha client is the user interface for the assistant, it uses whisper.cpp fo
 
 ### Usage
 Before runing client make sure server is running first as client needs to call the api started by server.
-```
+```java
 $ ./alpha client --help
 Start the alpha client, a client which records and transcribes audio which is then sent to the alpha server.
 
@@ -38,7 +38,7 @@ Flags:
 ### In Progress
 
 ### Usage
-```
+```java
 $ ./alpha server --help
 Start the alpha personal assistant server.
 
