@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 NAME HERE <EMAIL ADDRESS>
+Copyright © 2023 Sam Fatehmanesh sam.fatehmanesh@gmail.com
 */
 package cmd
 
@@ -67,7 +67,7 @@ func init() {
 func hkClient(modelpath string, serverURL string, vad bool, vad_strength int) error {
 	// 0x40, 0x50 = super key
 	// Initialize the HotKey. In this case, the hotkey is the letter "B" pressed with the "super" key.
-	hk := hotkey.New([]hotkey.Modifier{hotkey.Modifier(0x50)}, hotkey.KeyB)
+	hk := hotkey.New([]hotkey.Modifier{hotkey.Modifier(0x50)}, hotkey.KeyX)
 	// Register the HotKey to listen for key presses.
 	if err := hk.Register(); err != nil {
 		return err
