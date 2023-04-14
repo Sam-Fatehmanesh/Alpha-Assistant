@@ -9,8 +9,9 @@ cd Alpha-Assistant
 git clone https://github.com/ggerganov/whisper.cpp.git
 cd whisper.cpp/bindings/go
 make whisper
-cd ../../..
+cd ../..
 bash ./models/download-ggml-model.sh tiny.en
+cd ..
 CGO_CFLAGS=-I/path/to/whisper.cpp CGO_LDFLAGS=-L/path/to/whisper.cpp go build -o alpha
 ```
 ## Client
@@ -18,7 +19,7 @@ The alpha client is the user interface for the assistant, it uses whisper.cpp fo
 
 ### Usage
 Before runing client make sure server is running first as client needs to call the api started by server.
-```bash
+```
 $ ./alpha client --help
 Start the alpha client, a client which records and transcribes audio which is then sent to the alpha server.
 
@@ -37,7 +38,7 @@ Flags:
 ### In Progress
 
 ### Usage
-```bash
+```
 $ ./alpha server --help
 Start the alpha personal assistant server.
 
