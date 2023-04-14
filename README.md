@@ -12,7 +12,7 @@ make whisper
 cd ../..
 bash ./models/download-ggml-model.sh tiny.en
 cd ..
-CGO_CFLAGS=-I/path/to/whisper.cpp CGO_LDFLAGS=-L/path/to/whisper.cpp go build -o alpha
+CGO_CFLAGS=-I/abspath/to/whisper.cpp CGO_LDFLAGS=-L/abspath/to/whisper.cpp go build -o alpha
 ```
 ## Client
 The alpha client is the user interface for the assistant, it uses whisper.cpp for speech to text and espeak for text to speech. The current interface method involves a hot key Voice Activity detection hybrid mechanism where the hotkey starts recording and either another press of the hotkey or no speech detected for 2 seconds ends the recording. The hotkey is currently super + B, customizabiltiy will be improved on a later date.
