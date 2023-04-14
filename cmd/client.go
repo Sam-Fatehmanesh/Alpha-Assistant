@@ -56,7 +56,7 @@ func init() {
 	rootCmd.AddCommand(startClientCmd)
 
 	startClientCmd.Flags().StringP("model-path", "m", "./whisper.cpp/models/ggml-tiny.en.bin", "Directory for whisper STT model")
-	startClientCmd.Flags().BoolP("vad", "v", true, "Use voice activity detection")
+	startClientCmd.Flags().BoolP("vad", "v", true, "Use voice activity detection to stop recording")
 	startClientCmd.Flags().Int("vad-mode", 1, "The strength of the voice activity detection, from 0, most sensitive, to 3, least sensitive")
 	startClientCmd.Flags().StringP("server-url", "s", "http://127.0.0.1:22589", "URL for the alpha AI server")
 }
