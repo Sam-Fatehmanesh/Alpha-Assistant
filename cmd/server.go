@@ -46,7 +46,7 @@ var serverCmd = &cobra.Command{
 			}
 
 			receivedText := string(body)
-			outputText, err := initiate_mind_instance(receivedText)
+			outputText, err := initiateMindInstance(receivedText)
 			if err != nil {
 				log.Fatal(err)
 				return
@@ -77,8 +77,8 @@ func init() {
 	// serverCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
-func initiate_mind_instance(input string) (string, error) {
+func initiateMindInstance(input string) (string, error) {
 
 	//return input, nil
-	return "Tempoary output", nil
+	return "temporary output", nil
 }
